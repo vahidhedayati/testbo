@@ -1,3 +1,4 @@
+<g:render template="menu"/>
 <boselecta:connect
 user="randomUser2"
 job="job2"
@@ -6,10 +7,7 @@ message="Woot we are connected"
 
   
   
-  
-
- <form method=post action=example5>
-    
+   <form  action="example5">    
     
 <boselecta:selectPrimary id="MyContinent2" name="MyContinent2"
 job= "job2"

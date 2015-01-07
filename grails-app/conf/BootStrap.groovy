@@ -1,6 +1,7 @@
 import ajaxdependancyselectexample.MyCity
 import ajaxdependancyselectexample.MyContinent
 import ajaxdependancyselectexample.MyCountry
+import ajaxdependancyselectexample.MyShops
 
 class BootStrap {
 
@@ -36,7 +37,14 @@ class BootStrap {
 		MyCity.findOrSaveWhere(mycountry:c4,cityName:'Adilabad')
 		MyCity.findOrSaveWhere(mycountry:c4,cityName:'Bairgania')
 		MyCity.findOrSaveWhere(mycountry:c4,cityName:'Chatra')
-		
+		def gg1=cc1.addToMyborough(actualName:'Lambeth').save(flush:true)
+		def gg2=cc1.addToMyborough(actualName:'Camden').save(flush:true)
+		def gg3=cc2.addToMyborough(actualName:'Banbury').save(flush:true)
+		def gg4=cc2.addToMyborough(actualName:'Witney').save(flush:true)
+		def sc1 = MyShops.findOrSaveWhere(mycity: cc1, shopName:'Abc')
+		def sc2 = MyShops.findOrSaveWhere(mycity: cc1, shopName:'Cat')
+		def sc3 = MyShops.findOrSaveWhere(mycity: cc2, shopName:'Gigo')
+		def sc4 = MyShops.findOrSaveWhere(mycity: cc2, shopName:'DayLight')
 		
 		
     }
