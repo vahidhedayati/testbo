@@ -23,6 +23,19 @@ appendValue=''
 appendName='Updated'
     noSelection="['': 'Please choose Continent']" 
 setId="MyCity1"
+setId1="MyCity0"
+
+setId2="MyCity2"
+setId3="MyCity3"
+domain3='ajaxdependancyselectexample.MyCity3'
+
+setId4="MyCity4"
+domain4='ajaxdependancyselectexample.MyCity4'
+setId5="MyCity5"
+domain5='ajaxdependancyselectexample.MyCity5'
+setId6="MyCity6"
+domain6='ajaxdependancyselectexample.MyCity6'
+
 value='1'
 secondaryValue='2'
 />

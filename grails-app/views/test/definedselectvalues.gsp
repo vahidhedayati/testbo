@@ -26,6 +26,7 @@ user="randomUser2"
     hidden="hiddenNew"
     noSelection="['': 'Please choose Continent']" 
     setId="MyCountry11"
+    value="2"
     />
 
 
@@ -48,6 +49,7 @@ user="randomUser2"
     
     noSelection="['': 'Please choose Continent']" 
     setId="MyCity11"
+     value="1"
     />
 
 
@@ -70,6 +72,7 @@ user="randomUser2"
     
     setId="MyShop12"
 	noSelection="['': 'Please choose Country 1111']" 
+	 value="2"
 	/>
 
 
