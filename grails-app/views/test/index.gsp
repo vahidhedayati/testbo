@@ -1,6 +1,6 @@
 
 <g:render template="menu"/>
-<boselecta:connect
+<bo:connect
 user="randomUser"
 job="job1"
 message="Woot we are connected"
@@ -9,7 +9,7 @@ message="Woot we are connected"
    <form  action="example5">
   
   
-<boselecta:selectPrimary id="MyCountry1" name="MyCountry1"
+<bo:selecta id="MyCountry1" name="MyCountry1"
 job= "job1"
 user="randomUser"
 domain='ajaxdependancyselectexample.MyCountry'

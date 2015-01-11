@@ -1,17 +1,20 @@
 <g:render template="menu"/>
-<boselecta:connect
-user="randomUser2"
-job="job2"
+ <% def myuser = bo.randomizeUser('user': 'random1') %>
+ 
+<bo:connect
+user="${myuser }"
+job="job12"
 message="Woot we are connected"
  />
 
-  
-  
+ 
+  Europe / UK / London / (Shop 2: Cat)
    <form  action="example5">    
-    
-<boselecta:selectPrimary id="MyContinent2" name="MyContinent2"
-job= "job2"
-user="randomUser2"
+   
+<bo:selecta id="MyContinent22" name="MyContinent2"
+job= "job12"
+user1="${bo.randomizeUser('user': 'random1') }"
+user="${myuser }"
     domain='ajaxdependancyselectexample.MyContinent'
     searchField='continentName'
     collectField='id'
@@ -25,8 +28,11 @@ user="randomUser2"
 
     hidden="hiddenNew"
     noSelection="['': 'Please choose Continent']" 
-    setId="MyCountry11"
+    setId="MyCountry111"
+    
     value="2"
+    nextValue="1" 
+    
     />
 
 
@@ -34,9 +40,9 @@ user="randomUser2"
 
 
 
-<boselecta:selectSecondary id="MyCountry11" name="MyCountry11"
-job= "job2"
-user="randomUser2"
+<bo:selecta id="MyCountry111" name="MyCountry11"
+job= "job12"
+user="${myuser}"
 	domain2='ajaxdependancyselectexample.MyCity'
     bindid="mycountry.id"
     searchField2='cityName'
@@ -45,20 +51,21 @@ user="randomUser2"
     
      appendValue=''
      appendName='Updated'
-    
+
     
     noSelection="['': 'Please choose Continent']" 
-    setId="MyCity11"
-     value="1"
+    setId="MyCity111"
+value="1" 
+    nextValue="2" 
     />
 
 
 
 
 
-    <boselecta:selectSecondary name="MyCity11" id="MyCity11"  
-    job= "job2"
-user="randomUser2"
+    <bo:selecta name="MyCity11" id="MyCity111"  
+    job= "job12"
+user="${myuser }"
     optionKey="id" optionValue="name"
     
     
@@ -69,15 +76,16 @@ user="randomUser2"
     appendValue=''
     appendName='Updated'
    
-    
-    setId="MyShop12"
+ 
+    setId="MyShop122"
 	noSelection="['': 'Please choose Country 1111']" 
-	 value="2"
+	value="2"
+	nextValue="2"
 	/>
 
 
 
-    <g:select name="MyShop12" id="MyShop12"  
+    <g:select name="MyShop12" id="MyShop122"  
     optionKey="id" optionValue="shopName" 
     from="[]" required="required" noSelection="['': 'Please choose City']" 
     />

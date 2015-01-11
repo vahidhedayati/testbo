@@ -1,7 +1,3 @@
-<%@ page import="ajaxdependancyselectexample.MyContinent" %>
-<%@ page import="ajaxdependancyselectexample.MyCountry" %>
-<%@ page import="ajaxdependancyselectexample.MyCity" %>
-
 
 <!DOCTYPE html>
 <html>
@@ -15,9 +11,9 @@
 		
 	<body>
 	<a href="#create-myContinent" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-
+<g:render template="menu"/>
 	
-<boselecta:connect
+<bo:connect
 		job= "job6"
 user="randomUser6"
 message="Woot we are connected"
@@ -27,7 +23,7 @@ message="Woot we are connected"
 
 <form method=post action=example5>
 	
-	<boselecta:selectPrimary id="MyDepartments141" name="MyDepartments141"
+	<bo:selecta id="MyDepartments141" name="MyDepartments141"
 		job= "job6"
 user="randomUser6"
         domain='ajaxdependancyselectexample.Departments'
@@ -66,7 +62,7 @@ user="randomUser6"
 
 
 
-<boselecta:selectSecondary id="computersId141" name="computersId141"
+<bo:selecta id="computersId141" name="computersId141"
 		job= "job6"
 user="randomUser6"
 	domain2='ajaxdependancyselectexample.Os'
