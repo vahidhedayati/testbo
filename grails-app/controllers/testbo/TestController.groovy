@@ -21,6 +21,7 @@ class TestController {
 	def norefselectionext() {}
 	def noref() { }
 	def multimultidomainexample() { }
+	def autoComplete() { }
 	def example5() {
 	
 		
