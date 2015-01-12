@@ -3,6 +3,7 @@
 | <a class="button" href="definedselectvalues2">Defined values 2 </a>
 | <a class="button" href="definedselectvalues3">Defined values 3  JSON</a>
  
+| <a class="button" href="autoComplete">autoComplete - in progress</a>
 | <a class="button" href="multidomainexample">MultiDomain per call</a>
 
 | <a class="button" href="multimultidomainexample">Multiple MultiDomain per call</a>
