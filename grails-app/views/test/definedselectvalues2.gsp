@@ -15,7 +15,7 @@ user="${myuser ?: 'notworking' }"
     domain='ajaxdependancyselectexample.MyContinent'
     searchField='continentName'
     collectField='id'
-    
+  formatting="JSON"  
     domain2='ajaxdependancyselectexample.MyCountry'
     bindid="mycontinent.id"
     searchField2='countryName'
@@ -43,7 +43,7 @@ user="${myuser ?: 'notworking' }"
     bindid="mycountry.id"
     searchField2='cityName'
     collectField2='id'
-    
+    formatting="JSON"
     
      appendValue=''
      appendName='Updated'
@@ -64,7 +64,7 @@ value="4"
 user="${myuser ?: 'notworking' }"
     optionKey="id" optionValue="name"
     
-    
+    formatting="JSON"
     domain2='ajaxdependancyselectexample.MyShops'
     bindid="mycity.id"
     searchField2='shopName'
