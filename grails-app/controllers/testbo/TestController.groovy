@@ -10,18 +10,37 @@ class TestController {
 	
 	def index() { }
 	def index2() { }
+	
+	
 	def definedselectvalues() { }
 	def definedselectvalues2() {
 		String myuser = randService.randomise('username')
 		[myuser:myuser]
 	}
 	def definedselectvalues3() { }
-	def multidomainexample() { }
+	
 	def norefprimary() { }
 	def norefselectionext() {}
 	def noref() { }
+	
+	def multidomainexample() { }
 	def multimultidomainexample() { }
-	def autoComplete() { }
+	
+	
+	def autoComplete() { 
+		String myuser = randService.randomise('username')
+		[myuser:myuser]
+		
+	}
+	
+	def selectautoComplete() {
+		String myuser = randService.randomise('username')
+		[myuser:myuser]
+		
+	}
+	
+	
+	
 	def example5() {
 	
 		

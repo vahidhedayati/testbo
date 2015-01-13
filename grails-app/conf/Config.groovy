@@ -117,4 +117,4 @@ log4j.main = {
 }
 //boselecta.formatting="JSON"
 boselecta.formatting="none"
-boselecta.depth="40"
+boselecta.depth="4"

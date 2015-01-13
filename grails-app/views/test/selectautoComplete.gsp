@@ -14,36 +14,59 @@
 		
 		
 	<body>
-	<a href="#create-myContinent" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 
-		
-		
 		<h1>Select then Auto complete</h1>
 This provides a select box which then updates binding to an auto complete box, typically if lets say you have lots of cities and the return be pages and pages for a select box, you could use this function to simply choose country then let user auto complete the city
  <br><br>
  <div>
+<g:render template="menu" />
+<bo:connect user="${myuser}" job="job1122" message="Woot we are connected" />
+
 
 <form method=post action=example5>
 <label>Continent:</label>
-<g:selectAutoComplete 
-	id="MyContinent2" 
-	id2="MyCountry2" 
-	name="MyContinent2"
-    domain="ajaxdependancyselectexample.MyContinent"
-    searchField="continentName"
-    collectField="id"
- 	primarybind="mycontinent.id"
-    domain2="ajaxdependancyselectexample.MyCountry"
-    searchField2="countryName"
-    collectField2="id"
+
     
-    appendValue=""
-    appendName="values updated"
-    noSelection="['': 'Please choose Continent']" 
-    setId="MyCountry121"
-    hidden='hidden3'
-    hidden2='hidden4'
-    value=""/>
+    
+   <bo:selecta 
+		user="${myuser}" job="job1122"
+
+		id="MyContinent2" name="MyContinent2"
+
+    	domain='ajaxdependancyselectexample.MyContinent'
+    	searchField='continentName'
+    	collectField='id'
+    
+    	domain2='ajaxdependancyselectexample.MyCountry'
+    	bindid="mycontinent.id"
+    	searchField2='countryName'
+    	appendValue=''
+    	appendName='Updated'
+    	collectField2='id'
+
+    	hidden="hiddenNew"
+    	noSelection="['': 'Please choose Continent']" 
+    	setId="MyCountry11"
+    />
+    
+    
+    	<bo:selecta 
+		autoComplete="true" 
+		job="job1122" 
+		user="${myuser}"
+		
+		id="MyCountry11" 
+		name="MyCountry11"
+		
+		
+		
+		domain2='ajaxdependancyselectexample.MyCity' 
+		bindid="mycountry.id"
+		searchField2='cityName' 
+		collectField2='id' 
+		setId="MyCity11" 
+	/>
+    
     
     
     
@@ -51,39 +74,6 @@ This provides a select box which then updates binding to an auto complete box, t
 <input type=submit value=go> </form>
 
 
-
-<br><br>
-
-<pre>
-
-&lt;form method=post action=example5&gt;
-&lt;label&gt;Continent:&lt;/label&gt;
-&lt;g:selectAutoComplete 
-	id="MyContinent2" 
-	id2="MyCountry2" 
-	name="MyContinent2"
-    domain="ajaxdependancyselectexample.MyContinent"
-    searchField="continentName"
-    collectField="id"
- 	primarybind="mycontinent.id"
-    domain2="ajaxdependancyselectexample.MyCountry"
-    searchField2="countryName"
-    collectField2="id"
-    
-    appendValue=""
-    appendName="values updated"
-    noSelection="['': 'Please choose Continent']" 
-    setId="MyCountry121"
-    hidden='hidden3'
-    hidden2='hidden4'
-    value=""/&gt;
-    
-    
-    
-
-&lt;input type=submit value=go&gt; &lt;/form&gt;
-
-</pre>
 	</body>
 	</html>
 	
