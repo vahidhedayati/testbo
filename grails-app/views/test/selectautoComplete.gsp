@@ -32,7 +32,11 @@ This provides a select box which then updates binding to an auto complete box, t
 		user="${myuser}" job="job1122"
 
 		id="MyContinent2" name="MyContinent2"
-
+	
+	
+		selectToAutoComplete="true"
+		
+	
     	domain='ajaxdependancyselectexample.MyContinent'
     	searchField='continentName'
     	collectField='id'
