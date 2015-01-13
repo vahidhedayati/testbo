@@ -23,7 +23,6 @@ user="${myuser ?: 'notworking' }"
     appendName='Updated'
     collectField2='id'
 
-    hidden="hiddenNew"
     noSelection="['': 'Please choose Continent']" 
     setId="MyCountry11"
     

@@ -115,6 +115,6 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
-//boselecta.formatting="JSON"
-boselecta.formatting="none"
+boselecta.formatting="JSON"
+//boselecta.formatting="none"
 boselecta.depth="4"

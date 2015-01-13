@@ -5,7 +5,8 @@
 
 | <a class="button" href="autoComplete">autoComplete</a> 
 | <a class="button" href="selectautoComplete">select to autoComplete</a>
-
+| <a class="button" href="autoCompleteToSelect">autoComplete To Select</a>
+| <a class="button" href="autoCompleteToSelect2">autoComplete To Select to another select</a>
 | <a class="button" href="multidomainexample">MultiDomain per call</a>
 
 | <a class="button" href="multimultidomainexample">Multiple MultiDomain per call</a>

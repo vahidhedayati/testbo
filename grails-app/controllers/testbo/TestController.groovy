@@ -26,7 +26,16 @@ class TestController {
 	def multidomainexample() { }
 	def multimultidomainexample() { }
 	
-	
+	def autoCompleteToSelect() {
+		String myuser = randService.randomise('username')
+		[myuser:myuser]
+		
+	}
+	def autoCompleteToSelect2() {
+		String myuser = randService.randomise('username')
+		[myuser:myuser]
+		
+	}
 	def autoComplete() { 
 		String myuser = randService.randomise('username')
 		[myuser:myuser]

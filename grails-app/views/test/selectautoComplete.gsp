@@ -48,7 +48,6 @@ This provides a select box which then updates binding to an auto complete box, t
     	appendName='Updated'
     	collectField2='id'
 
-    	hidden="hiddenNew"
     	noSelection="['': 'Please choose Continent']" 
     	setId="MyCountry11"
     />
