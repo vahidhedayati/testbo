@@ -24,7 +24,11 @@ class TestController {
 	def noref() { }
 	
 	def multidomainexample() { }
-	def multimultidomainexample() { }
+	def multimultidomainexample() {
+		String myuser = randService.randomise('username2')
+		[myuser:myuser]
+		
+	}
 	
 	def autoCompleteToSelect() {
 		String myuser = randService.randomise('username')

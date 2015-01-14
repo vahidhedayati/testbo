@@ -19,17 +19,17 @@
 This example Departments has many Employee and has many Documents 
 
 
-
-<form method=post action=example5>
 	<bo:connect
 		job= "job32"
-user="randomUser32"
+user="${myuser}"
 message="Woot we are connected job 1"
  />
+<form method=post action=example5>
+
 	
 	<bo:selecta id="MyDepartments" name="MyDepartments"
 	job= "job32"
-user="randomUser32"
+user="${myuser}"
         domain='ajaxdependancyselectexample.Departments'
         searchField='name'
         collectField='id'
@@ -63,14 +63,10 @@ This example Departments has many Employee and has many Documents - both of them
 
 
 <form method=post action=example5>
-		<bo:connect
-		job= "job33"
-user="randomUser33"
-message="Woot we are connected job 2"
- />
+
 	<bo:selecta id="MyDepartments11" name="MyDepartments11"
-		job= "job33"
-user="randomUser33"
+job= "job32"
+user="${myuser}"
         domain='ajaxdependancyselectexample.Departments'
         searchField='name'
         collectField='id'
@@ -101,14 +97,10 @@ user="randomUser33"
 
 
 <form method=post action=example5>
-			<bo:connect
-		job= "job34"
-user="randomUser34"
-message="Woot we are connected job 2"
- />
+
 	<bo:selecta id="MyDepartments131" name="MyDepartments131"
-		job= "job34"
-user="randomUser34"
+job= "job32"
+user="${myuser}"
         domain='ajaxdependancyselectexample.Departments'
         searchField='name'
         collectField='id'
@@ -150,14 +142,10 @@ user="randomUser34"
 Please note only the first computer from each initial department selected has any further values.
 
 <form method=post action=example5>
-				<bo:connect
-		job= "job35"
-user="randomUser35"
-message="Woot we are connected job 2"
- />
+			
 	<bo:selecta id="MyDepartments141" name="MyDepartments141"
-			job= "job35"
-user="randomUser35"
+		job= "job32"
+user="${myuser}"
         domain='ajaxdependancyselectexample.Departments'
         searchField='name'
         collectField='id'
@@ -195,8 +183,8 @@ user="randomUser35"
 
 
 <bo:selecta id="computersId141" name="computersId141"
-		job= "job35"
-user="randomUser35"
+		job= "job32"
+user="${myuser}"
 	domain2='ajaxdependancyselectexample.Os'
     bindid="computers.id"
     searchField2='osName'
