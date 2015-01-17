@@ -20,7 +20,7 @@ This provides a select box which then updates binding to an auto complete box, t
  <br><br>
  <div>
 <g:render template="menu" />
-<bo:connect user="${myuser}" job="job1122" message="Woot we are connected" />
+<bo:connect user="${myuser}" job="job1122"  />
 
 
 <form method=post action=example5>

@@ -22,7 +22,7 @@ This example Departments has many Employee and has many Documents
 	<bo:connect
 		job= "job32"
 user="${myuser}"
-message="Woot we are connected job 1"
+
  />
 <form method=post action=example5>
 

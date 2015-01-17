@@ -1,9 +1,8 @@
 
 <g:render template="menu"/>
 <bo:connect
-user="randomUser"
+user="${myuser }"
 job="job1"
-message="Woot we are connected"
  />
 
    <form  action="example5">
@@ -11,7 +10,7 @@ message="Woot we are connected"
   
 <bo:selecta id="MyCountry1" name="MyCountry1"
 job= "job1"
-user="randomUser"
+user="${myuser }"
 domain='ajaxdependancyselectexample.MyCountry'
 searchField='countryName'
 collectField='id'

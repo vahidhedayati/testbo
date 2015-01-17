@@ -13,7 +13,7 @@
 <bo:connect
 user="randomUser1211111"
 job="job121111"
-message="Woot we are connected"
+
  />
 
 <h1>Primary No Ref selection</h1>

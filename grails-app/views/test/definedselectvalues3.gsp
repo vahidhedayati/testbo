@@ -2,7 +2,7 @@
 <bo:connect
 user="randomUser2"
 job="job2"
-message="Woot we are connected"
+
  />
 
   

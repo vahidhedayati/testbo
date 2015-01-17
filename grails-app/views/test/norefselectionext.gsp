@@ -10,7 +10,7 @@
 <bo:connect
 user="randomUser1a1"
 job="job12a1"
-message="Woot we are connected"
+
  />
 <h1>Nested Selection from fully ref to no ref and back to full ref</h1>
 In this example we have :<br>

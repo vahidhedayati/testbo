@@ -2,7 +2,7 @@
 
 
 <g:render template="menu" />
-<bo:connect user="${myuser}" job="job2" message="Woot we are connected" />
+<bo:connect user="${myuser}" job="job2"  />
 
 
 

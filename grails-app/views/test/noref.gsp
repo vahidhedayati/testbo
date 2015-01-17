@@ -2,7 +2,7 @@
 <bo:connect
 user="randomUser12111"
 job="job1211"
-message="Woot we are connected"
+
  />
 
 	<form method=post action=example5>

@@ -2,7 +2,7 @@
 <bo:connect
 user="${myuser ?: 'notworking' }"
 job="job212"
-message="Woot we are connected"
+
  />
 
   Asia / India 	/ chatra

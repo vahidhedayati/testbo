@@ -4,7 +4,7 @@
 <bo:connect
 user="${myuser }"
 job="job12"
-message="Woot we are connected"
+
  />
 
  

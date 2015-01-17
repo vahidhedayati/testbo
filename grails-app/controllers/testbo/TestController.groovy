@@ -8,7 +8,11 @@ class TestController {
 	
 	def randService
 	
-	def index() { }
+	def index() { 
+		
+		String myuser = randService.randomise('username')
+		[myuser:myuser]
+	}
 	def index2() { }
 	
 	
