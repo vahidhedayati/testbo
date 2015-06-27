@@ -1,8 +1,10 @@
 <g:render template="menu"/>
+
+
 <bo:connect
 user="randomUser2"
 job="job2"
-
+domainDepth="0"
  />
 
   
@@ -10,8 +12,10 @@ job="job2"
    <form  action="example5">    
     
 <bo:selecta id="MyContinent2" name="MyContinent2"
+
 job= "job2"
 user="randomUser2"
+domainDepth="0"
     domain='ajaxdependancyselectexample.MyContinent'
     searchField='continentName'
     collectField='id'
@@ -36,12 +40,13 @@ user="randomUser2"
 <bo:selecta id="MyCountry11" name="MyCountry11"
 job= "job2"
 user="randomUser2"
+domainDepth="0"
 	domain2='ajaxdependancyselectexample.MyCity'
     bindid="mycountry.id"
     searchField2='cityName'
     collectField2='id'
     
-    
+    formatting="JSON"
      appendValue=''
      appendName='Updated'
     
@@ -58,15 +63,14 @@ user="randomUser2"
     job= "job2"
 user="randomUser2"
     optionKey="id" optionValue="name"
-    
-    
+    domainDepth="0"
     domain2='ajaxdependancyselectexample.MyShops'
     bindid="mycity.id"
     searchField2='shopName'
     collectField2='id'
     appendValue=''
     appendName='Updated'
-   
+   formatting="JSON"
     
     setId="MyShop12"
 	noSelection="['': 'Please choose Country 1111']" 

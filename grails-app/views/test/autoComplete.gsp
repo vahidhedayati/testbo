@@ -1,4 +1,15 @@
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="layout" content="main">
+		<g:set var="entityName" value="${message(code: 'myContinent.label', default: 'MyContinent')}" />
+		<title><g:message code="default.create.label" args="[entityName]" /></title>
+	</head>
+	
+		
+		
+	<body>
 
 
 <g:render template="menu" />
@@ -14,11 +25,14 @@
 		job="job2" 
 		user="${myuser}"
 		
+		
 		id="MyContinent2" 
 		name="MyContinent2" 
 		
+		hiddenField="VahidHidden_"
+		jsonField="VahidJSON_"
 
-		
+		formatting="JSON"
 		domain='ajaxdependancyselectexample.MyContinent'
 		searchField='continentName' 
 		collectField='id'
@@ -44,8 +58,10 @@
 		id="MyCountry11" 
 		name="MyCountry11"
 		
+		hiddenField="NextHidden_"
+		jsonField="NextJSON_"
 		
-		
+		formatting="JSON"
 		domain2='ajaxdependancyselectexample.MyCity' 
 		bindid="mycountry.id"
 		searchField2='cityName' 
@@ -62,9 +78,11 @@
 		user="${myuser}" 
 	 
 		autoComplete="true"
-	 
+	 formatting="JSON"
 		name="MyCity11" 
 		id="MyCity11"
+		hiddenField="myHidden_"
+		jsonField="myJSON_"
 	
 		domain2='ajaxdependancyselectexample.MyShops' 
 		bindid="mycity.id"
@@ -80,6 +98,10 @@
 	user="${myuser }"
 
 	autoComplete="true"
+formatting="JSON"
+hiddenField="myHidden_"
+		jsonField="myJSON_"
+
 
 	id="secondarySearch4"  
 	name="NAMEOFBorough"  
@@ -96,3 +118,5 @@
 
 	<input type=submit value=go>
 </form>
+</body>
+</html>

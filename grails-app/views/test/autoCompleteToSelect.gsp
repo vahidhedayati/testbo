@@ -1,4 +1,15 @@
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="layout" content="main">
+		<g:set var="entityName" value="${message(code: 'myContinent.label', default: 'MyContinent')}" />
+		<title><g:message code="default.create.label" args="[entityName]" /></title>
+	</head>
+	
+		
+		
+	<body>
 
 
 <g:render template="menu" />
@@ -20,7 +31,7 @@
 		id="MyContinent2" 
 		name="MyContinent2" 
 		
-
+formatting="JSON"
 		
 		domain='ajaxdependancyselectexample.MyContinent'
 		searchField='continentName' 
@@ -69,3 +80,6 @@
 
 	<input type=submit value=go>
 </form>
+
+</body>
+</html>

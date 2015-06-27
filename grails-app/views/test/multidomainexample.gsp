@@ -24,13 +24,21 @@ user="randomUser6"
 <form method=post action=example5>
 	
 	<bo:selecta id="MyDepartments141" name="MyDepartments141"
+	
 		job= "job6"
-user="randomUser6"
+		user="randomUser6"
+
+		domainDepth="4"
+		
         domain='ajaxdependancyselectexample.Departments'
         searchField='name'
         collectField='id'
-        noSelection="['': 'Please choose Department']" 
+        noSelection="['': 'Please choose Department']"
         
+         
+        appendValue=''
+		appendName='Updated'
+
         domain2='ajaxdependancyselectexample.Employee'
         bindid="department.id"
         searchField2='name'
@@ -63,8 +71,11 @@ user="randomUser6"
 
 
 <bo:selecta id="computersId141" name="computersId141"
-		job= "job6"
-user="randomUser6"
+	job= "job6"
+	
+	user="randomUser6"
+	domainDepth="3"
+
 	domain2='ajaxdependancyselectexample.Os'
     bindid="computers.id"
     searchField2='osName'

@@ -11,6 +11,8 @@ job="job1"
 <bo:selecta id="MyCountry1" name="MyCountry1"
 job= "job1"
 user="${myuser }"
+domainDepth="0"
+formatting="JSON"
 domain='ajaxdependancyselectexample.MyCountry'
 searchField='countryName'
 collectField='id'
