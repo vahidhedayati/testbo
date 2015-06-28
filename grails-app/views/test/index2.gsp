@@ -4,7 +4,7 @@
 <bo:connect
 user="randomUser2"
 job="job2"
-domainDepth="0"
+
  />
 
   
@@ -27,7 +27,7 @@ domainDepth="0"
     appendName='Updated'
     collectField2='id'
 
-    hidden="hiddenNew"
+
     noSelection="['': 'Please choose Continent']" 
     setId="MyCountry11"
     />
@@ -62,7 +62,7 @@ domainDepth="0"
     <bo:selecta name="MyCity11" id="MyCity11"  
     job= "job2"
 user="randomUser2"
-    optionKey="id" optionValue="name"
+    
     domainDepth="0"
     domain2='ajaxdependancyselectexample.MyShops'
     bindid="mycity.id"

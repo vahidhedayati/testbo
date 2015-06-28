@@ -23,7 +23,7 @@ user="randomUser6"
 
 <form method=post action=example5>
 	
-	<bo:selecta id="MyDepartments141" name="MyDepartments141"
+	<bo:selecta2 id="MyDepartments141" name="MyDepartments141"
 	
 		job= "job6"
 		user="randomUser6"
@@ -70,7 +70,7 @@ user="randomUser6"
 
 
 
-<bo:selecta id="computersId141" name="computersId141"
+<bo:selecta2 id="computersId141" name="computersId141"
 	job= "job6"
 	
 	user="randomUser6"

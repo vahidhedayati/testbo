@@ -3,6 +3,7 @@
 <bo:connect
 user="${myuser }"
 job="job1"
+
  />
 
    <form  action="example5">

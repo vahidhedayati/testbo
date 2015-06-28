@@ -23,7 +23,7 @@ user="randomUser2"
     appendName='Updated'
     collectField2='id'
 formatting="JSON"
-    hidden="hiddenNew"
+    
     noSelection="['': 'Please choose Continent']" 
     setId="MyCountry131"
     
@@ -63,8 +63,7 @@ value="1"
     <bo:selecta name="MyCity11" id="MyCity131"  
     job= "job2"
 user="randomUser2"
-    optionKey="id" optionValue="name"
-    
+  
     
     domain2='ajaxdependancyselectexample.MyShops'
     bindid="mycity.id"
